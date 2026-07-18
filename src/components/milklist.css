@@ -1,0 +1,101 @@
+/* 🌫 Milk Records Background */
+.milk-wrapper {
+  min-height: 100vh;
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+  position: relative;
+}
+
+.milk-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px); */
+}
+
+
+/* 🧊 Glass Search Card */
+.milk-glass-card {
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.55),
+    rgba(255, 255, 255, 0.18)
+  );
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.18),
+    inset 0 1px 6px rgba(255, 255, 255, 0.6);
+  padding: 18px;
+  position: relative;
+  z-index: 2;
+}
+
+
+/* ✍ Glass Inputs */
+.milk-input {
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+}
+
+.milk-input:focus {
+  border-color: rgba(0, 123, 255, 0.9);
+  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5);
+}
+
+
+/* 📊 Excel Styled Glass Table (no hover) */
+.milk-table {
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 14px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow:
+    inset 0 1px 5px rgba(255, 255, 255, 0.4),
+    0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Excel style grid cells */
+.milk-table th,
+.milk-table td {
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(180, 180, 180, 0.9);
+  padding: 8px 10px;
+  font-size: 14px;
+}
+
+/* Excel sheet header look */
+.milk-table thead th {
+  background: linear-gradient(
+    to bottom,
+    rgba(217, 234, 255, 0.9),
+    rgba(198, 220, 255, 0.9)
+  ) !important;
+  font-weight: bold;
+  border-bottom: 2px solid rgba(150, 150, 150, 0.9);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+/* Alternate row shading */
+.milk-table tbody tr:nth-child(even) td {
+  background: rgba(255, 255, 255, 0.78) !important;
+}
+
+/* Text alignment */
+.milk-table td {
+  vertical-align: middle;
+}

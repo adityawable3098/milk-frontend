@@ -1,0 +1,84 @@
+.milk-page {
+  min-height: calc(100vh - 120px);
+ 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  position: relative;
+}
+
+/* soft dim overlay */
+.milk-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* background: rgba(255,255,255,0.2); */
+  /* backdrop-filter: blur(4px); */
+  z-index: 0;
+}
+
+.milk-box {
+  position: relative;
+  z-index: 2;
+  width: 420px;
+  padding: 25px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.55);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.5);
+  box-shadow: 0 5px 18px rgba(0,0,0,0.2);
+}
+
+.milk-title {
+  text-align: center;
+  color: #0561d1;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* transparent input */
+.milk-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 2px solid rgba(255,255,255,0.7);
+  background: transparent;
+  font-weight: 500;
+  color: black;
+}
+
+.milk-input::placeholder {
+  color: rgba(0,0,0,0.6);
+}
+
+.milk-total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: green;
+}
+
+.milk-total span {
+  background: rgba(255,255,255,0.6);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.milk-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #0561d1;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}

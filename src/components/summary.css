@@ -1,0 +1,90 @@
+/* 🌫️ Frosted cloudy background */
+.summary-wrapper {
+  min-height: 100vh;
+ 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+  position: relative;
+}
+
+.summary-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px); */
+}
+
+/* ✨ Soft cloudy input card */
+.glass-box {
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.55),
+    rgba(255, 255, 255, 0.15)
+  );
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 
+    0 4px 12px rgba(0, 0, 0, 0.15),
+    inset 0 1px 6px rgba(255, 255, 255, 0.6);
+  padding: 20px;
+}
+
+/* ✍️ Smooth Input Fields */
+.glass-input {
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.55),
+    rgba(255, 255, 255, 0.25)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  color: black;
+}
+
+.glass-input:focus {
+  border-color: rgba(0, 123, 255, 0.9);
+  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5);
+}
+
+/* 📊 Cloudy Glass Table */
+.glass-table {
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.45),
+    rgba(255, 255, 255, 0.25)
+  ) !important;
+  border-radius: 20px;
+  overflow: hidden;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  box-shadow: inset 0 1px 5px rgba(255, 255, 255, 0.4);
+}
+
+/* Cells */
+.glass-table th,
+.glass-table td {
+  background: rgba(255, 255, 255, 0.55) !important;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Remove Bootstrap thick borders */
+.table-bordered > :not(caption) > * > * {
+  border-width: 1px !important;
+}
+
+/* Ensure content overlays background blur */
+.content-box {
+  position: relative;
+  z-index: 2;
+}

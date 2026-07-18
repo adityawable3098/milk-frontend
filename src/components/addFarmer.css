@@ -1,0 +1,65 @@
+.addfarmer-page {
+  min-height: calc(100vh - 120px);
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+
+  position: relative;
+}
+
+.addfarmer-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* background: rgba(255, 255, 255, 0.18); */
+  /* backdrop-filter: blur(4px); */
+  z-index: 0;
+}
+
+.addfarmer-card {
+  position: relative;
+  z-index: 2;
+  width: 450px;
+  padding: 25px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* input-group glass look */
+.glass-input-group {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 3px 15px rgba(255, 255, 255, 0.3);
+}
+
+
+.glass-addon {
+  background: rgba(255, 255, 255, 0.6);
+  border: none;
+}
+
+.glass-input {
+  border: none;
+  background: rgba(255, 255, 255, 0.4);
+  font-weight: 500;
+}
+
+.glass-input:focus {
+  box-shadow: none;
+}
+
+/* button */
+.addfarmer-btn {
+  border-radius: 10px;
+}

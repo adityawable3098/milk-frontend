@@ -1,0 +1,32 @@
+
+
+/* optional soft overlay */
+.dashboard-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* background: rgba(255,255,255,0.15); */
+  /* backdrop-filter: blur(2px); */
+  z-index: 0;
+}
+
+/* ensure content stays above overlay */
+.dashboard-wrapper .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Glass cards */
+.dashboard-card {
+  background: rgba(255, 255, 255, 0.4) !important;
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.5);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 18px rgba(0,0,0,0.35);
+}
