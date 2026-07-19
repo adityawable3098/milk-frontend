@@ -24,7 +24,7 @@ export default function AddMilk() {
     setLoading(true);
 
     try {
-      await axios.post("http://localhost:7777/api/milk", {
+      await axios.post("https://milk-backend-production-f620.up.railway.app/api/milk", {
         farmerId: parseInt(farmerId),
         litres: parseFloat(liters),
         fat: parseFloat(fat),

@@ -11,7 +11,7 @@ export default function MonthlySummary() {
 
   const fetchSummary = () => {
     axios
-      .get(`http://localhost:7777/api/summary/monthly/${farmerId}/${year}/${month}`)
+      .get(`https://milk-backend-production-f620.up.railway.app/api/summary/monthly/${farmerId}/${year}/${month}`)
       .then((res) => setSummary(res.data))
       .catch((err) => console.log(err));
   };

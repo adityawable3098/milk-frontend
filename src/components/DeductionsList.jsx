@@ -8,7 +8,7 @@ export default function DeductionsList() {
 
   const fetchData = () => {
     if (!farmerId) return;
-    axios.get(`http://localhost:7777/api/deductions/farmer/${farmerId}`)
+    axios.get(`https://milk-backend-production-f620.up.railway.app/api/farmers/${farmerId}`)
       .then(res => setRecords(res.data))
       .catch(err => console.log(err));
   };

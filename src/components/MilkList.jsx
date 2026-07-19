@@ -19,7 +19,7 @@ export default function MilkList() {
 
     try {
       const res = await axios.get(
-        `http://localhost:7777/api/milk/farmer/${farmerId}`
+        `https://milk-backend-production-f620.up.railway.app/api/farmers/${farmerId}`
       );
 
       setRecords(res.data);

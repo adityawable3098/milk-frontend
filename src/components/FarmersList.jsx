@@ -24,7 +24,7 @@ export default function FarmersList() {
   // =========================
   const fetchFarmers = () => {
     axios
-      .get("http://localhost:7777/api/farmers")
+      .get("https://milk-backend-production-f620.up.railway.app/api/farmers")
       .then((res) => setFarmers(res.data))
       .catch(() => alert("Failed to load farmers"));
   };

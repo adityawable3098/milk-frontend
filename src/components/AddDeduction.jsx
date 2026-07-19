@@ -10,7 +10,7 @@ export default function AddDeduction() {
 
   const saveDeduction = () => {
     axios
-      .post("http://localhost:7777/api/deductions", {
+      .post("https://milk-backend-production-f620.up.railway.app/api/deductions", {
         farmerId,
         type,
         amount,

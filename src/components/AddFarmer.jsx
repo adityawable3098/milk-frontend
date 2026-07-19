@@ -14,9 +14,9 @@ export default function AddFarmer() {
       setMsg("⚠️ All fields are required");
       return;
     }
-
+// http://localhost:7777/api/farmers for laptop
     try {
-      await axios.post("http://localhost:7777/api/farmers", {
+      await axios.post("https://milk-backend-production-f620.up.railway.app/api/farmers", {
         name: farmerName,
         phone,
         village,

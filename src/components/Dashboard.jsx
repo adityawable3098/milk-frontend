@@ -13,7 +13,7 @@ export default function Dashboard() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:7777/api/dashboard/summary")
+      .get("https://milk-backend-production-f620.up.railway.app/api/dashboard/summary")
       .then((res) => {
         setStats(res.data);
       })
